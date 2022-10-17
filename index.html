@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">   
     <title>Studio Dve Kalinki</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
         <nav class="header-wrapper">
             <div class="logo-container">
                 <div class="logo-img-container"></div>
-                <h2 class="logo-title">Две Калинки</h2>
+                <h2 class="logo-title"><a class="logo-link" href="/">Две Калинки</a></h2>
             </div>
             <ul class="top-nav-list">
                 <li class="top-nav-item"><a href="#register">Регистрация</a></li>
@@ -101,9 +102,35 @@
         <div class="divider-horizontal"></div>
 
         <section id="contacts">
-            <h2 class="contacts-title"></h2>
-            <div class="contact-details-container"></div>
-            <div class="contact-form-container"></div>
+            
+            <div class="contacts-container">
+            <div class="contact-details-container">
+                <h2 class="contacts-title">Контакти</h2>
+                <p><i class="fa-solid fa-location-dot"></i><a class="contacts-link" href="https://www.google.se/maps/place/ABF+Vux+-+Odinsskolan/@57.7091772,11.9805527,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff3bab276e437:0x20975c4941590432!8m2!3d57.7091924!4d11.9827317">VUX Odinsskolan, Odinsgatan 17, 411 03 Göteborg</a></p>
+            
+                <p><i class="fa-solid fa-phone"></i>070-961 01 80</p>
+                
+                <p><i class="fa-solid fa-envelope"></i><a class="contacts-link" href="mailto:StudioDveKalinki@gmail.com">StudioDveKalinki@gmail.com</a></p>
+            </div>
+            <div class="contact-form-container">
+                <form name="contact-form" class="contact-form" method="post" netlify action="/">
+                    <div class="contact-form-field">
+                        <label for="name">Име:</label>
+                        <input class="contact-form-input-field" type="text" name="name" id="name" required="true">
+                    </div>
+                    <div class="contact-form-field">
+                        <label for="email">Имейл адрес:</label>
+                        <input class="contact-form-input-field" type="email" name="email" id="email" required="true">
+                    </div>
+                   <div class="contact-form-field">
+                        <label for="question">Вашият въпрос:</label>
+                        <textarea name="question" id="question" cols="30" rows="5"></textarea>
+                   </div>
+                    
+                    <button class="btn" id="submitBtn" type="submit">Изпрати</button>
+                </form>
+            </div>
+            </div>
         </section>
     </main>
 

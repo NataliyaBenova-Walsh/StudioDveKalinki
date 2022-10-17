@@ -34,6 +34,11 @@ body {
     color: var(--clr-red);
     font-size: 30px;
 }
+.logo-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--clr-red);
+}
 
 .logo-img-container {
     width: 50px;
@@ -74,8 +79,7 @@ body {
 }
 
 #hero {
-    height: 60vh;
-    margin: 36px;
+    min-height: 60vh;
     display: flex;
     width: 80%;
     margin: 0 auto;
@@ -158,8 +162,10 @@ body {
 
 .register-form {
     width: 50%;
-    margin: 0 auto;
-    border: 1px solid var(--clr-red);
+    margin: 36px auto;
+    box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.5);
     padding: 12px 24px;
     background-color: var(--clr-light-green);
 
@@ -188,13 +194,14 @@ body {
 
 .btn {
     background-color: var(--clr-cream);
-    border: 2px solid var(--clr-green);
+    border: 1px solid var(--clr-green);
     color: var(--clr-green);
     margin-top: 12px;
     padding: 8px 16px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .btn:hover {
@@ -202,8 +209,78 @@ body {
     color: var(--clr-cream);
 }
 
+#contacts {
+    width: 80%;
+    margin: 0 auto;
+ 
+}
+
+
+.contacts-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts-details-container {
+    width: 50%;
+}
+
+ i {
+    color: var(--clr-green);
+    padding-right: 8px;
+}
+
+.contacts-form-container {
+    width: 50%;
+ 
+}
+
+.contacts-link {
+    text-decoration: none;
+    color: var(--clr-gray);
+    cursor: pointer;
+}
+
+.contact-form {
+    margin: 36px;
+}
+.contact-form-field label {
+    display: block;
+    margin: 8px 0;
+}
+.contact-form-input-field {
+    background-color: var(--clr-cream);
+    border: none;
+    border-bottom: 1px solid var(--clr-green);
+}
+
+.contact-form textarea {
+    background-color: var(--clr-cream);
+    border: 1px solid #3d7939;
+}
 footer {
     text-align: center;
     font-size: 12px;
     color: #822e1b;
+}
+
+@media  screen and (max-width: 800px) {
+    #header-wrapper {
+        min-height: 50px;
+        margin: 0 12px;
+    }
+    #hero {
+        width: 100%;
+        display: block;
+    }
+    .hero-info {
+        width: 90%;
+        min-height: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-img-container {
+        display: none;
+    }
 }
