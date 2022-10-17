@@ -1,7 +1,5 @@
 
-  document
-  .querySelector("form")
-  .addEventListener("submit", onRegister);
+
 
 const onRegister = (event) => {
     event.preventDefault();
@@ -21,4 +19,6 @@ const onRegister = (event) => {
       
   };
   
-  
+  document
+  .querySelector("form")
+  .addEventListener("submit", onRegister);
