@@ -1,4 +1,8 @@
 
+  document
+  .querySelector("form")
+  .addEventListener("submit", onRegister);
+
 const onRegister = (event) => {
     event.preventDefault();
   
@@ -12,9 +16,12 @@ const onRegister = (event) => {
     })
       .then(() => console.log("Form successfully submitted"))
       .catch((error) => alert(error));
+
+      const inputs = document.querySelectorAll('#name-parent, #email, #phone, #kids');
+
+      inputs.forEach(input => {
+        input.value = '';
+      });
   };
   
-  document
-    .querySelector("form")
-    .addEventListener("submit", onRegister);
   
