@@ -145,10 +145,12 @@ body {
 
 .hameleonche-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .hameleonche-text {
     width: 50%;
+    padding: 24px;
 }
 
 .hameleonche-img {
@@ -272,6 +274,7 @@ footer {
     #hero {
         width: 100%;
         display: block;
+        min-height: 0;
     }
     .hero-info {
         width: 90%;
@@ -282,5 +285,22 @@ footer {
 
     .hero-img-container {
         display: none;
+    }
+    .dve-kalinki-img, .dve-kalinki-text, .hameleonche-img, .hameleonche-text {
+        width: 100%;
+        display: block;
+    }
+
+    .register-form {
+        width: 90%;
+    }
+    .form-input-field, .register-form textarea {
+        width: 90%;
+    }
+    .contacts-container {
+        display: block;
+    }
+    .contact-form-input-field, #question {
+        width: 90%;
     }
 }
