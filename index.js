@@ -15,13 +15,10 @@ const onRegister = (event) => {
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => console.log("Form successfully submitted"))
+      .then(myForm.reset())
       .catch((error) => alert(error));
 
-      const inputs = document.querySelectorAll('#name-parent, #email, #phone, #kids');
-
-      inputs.forEach(input => {
-        input.value = '';
-      });
+      
   };
   
   
