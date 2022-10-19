@@ -17,7 +17,7 @@
             </div>
             <ul class="top-nav-list">
                 <li class="top-nav-item"><a href="#register">Регистрация</a></li>
-                <li class="top-nav-item"><a href="#news">Новини</a></li>
+                <li class="top-nav-item"><a href="#news">Актуално</a></li>
                 <li class="top-nav-item"><a href="#about">За нас</a></li>
                 <li class="top-nav-item"><a href="contacts">Контакти</a></li>
             </ul>
@@ -30,9 +30,9 @@
         <section id="hero">
             <div class="hero-info">
                 <h1 class="hero-title green">Студио Две Калинки</h1>
-                <h2 class="hero-subtitle green">За деца от 3 до 9 години</h2>
+                <h3 class="hero-subtitle green">За деца от 3 до 9 години</h3>
                 <h1 class="hero-title red">Студио Хамелеонче</h1>
-                <h2 class="hero-subtitle red">За деца от 10 до 15 години</h2>
+                <h3 class="hero-subtitle red">За деца от 10 до 15 години</h3>
                 <p class="hero-text">Български клуб за деца </p>
             </div>
             <div class="hero-img-container">
@@ -42,6 +42,7 @@
         <div class="divider-horizontal"></div>
         <section id="about">
             <h2 class="about-title">За нас</h2>
+            <div class="divider-horizontal"></div>
             <p class="about-info">Семеен български клуб в Гьотеборг. Целта на клуба е да съхрани езика и традициите на българските деца, живеещи в Швеция.</p>
             <div class="about-container">
 
@@ -51,7 +52,9 @@
                         <h3 class="dve-kalinki-title">Студио Две Калинки</h3>
                         <h4 class="dve-kalinki-subtitle">Занимания за деца от 3 до 9 години</h3>
                         <p class="dve-kalinki-info">Азбука и смятане, български език, четене и пеене, традиции, рисуване, крафт занимания, игри и забавления</p>
+                        <a class="about-link" href="#register">Регистрация</a>
                     </div>
+                    
                 </div>
                 <div class="hameleonche-container">
                 
@@ -59,6 +62,7 @@
                         <h3 class="hameleonche-title">Студио Хамелеонче</h3>
                         <h4 class="hameleonche-subtitle">Занимания за деца от 10 до 15 години</h3>
                         <p class="hameleonche-info">Български език и традиции, история, фолклор</p>
+                        <a class="about-link" href="#register">Регистрация </a>
                     </div>
                     <div class="hameleonche-img"></div>
                 </div>
@@ -67,27 +71,56 @@
 
         <div class="divider-horizontal"></div>
 
+        <section id="news">
+            <h2 class="news-title">Актуално</h2>
+            <div class="divider-horizontal"></div>
+            <div class="news-container">
+                
+                <div class="news-container-1">
+                    <h3 class="news-subtitle">Ментална аритметика</h3>
+                    <div class="ma-img-container"></div>
+                    <div class="ma-info"><p>Тази събота започва първият урок по <span class="bold">ментална аритметика</span> за деца 6-8 години.</p>
+                        <p> Начало от <span class="bold">9.45 до 10.25</span> (в кафенето).  Има още няколко места.  </p>
+                        <p>Записване на телефон <span class="bold">0709-610-180,</p> цена на 1 стъпка (6 урока) 450 крони, едно посещение 95 крони.</p>
+                            <p>Молим децата и родителите, които дойдат на занятия в студио „Две калинки“ до 10.30 часа, да изчакат във фоайето на училището до края на часа по ментална аритметика.</p>
+                        </div>
+                </div>
+                <div class="divider-vertical"></div>
+                <div class="news-container-2">
+                    <h3 class="news-subtitle">Баба Марта гостува на Студио Две Калинки</h3>
+                    <div class="news-img-BM"></div>
+                </div>
+        </div>
+        </section>
+
+        <div class="divider-horizontal"></div>
+
         <section id="register">
             <h2 class="form-title">Регистрация</h2>
+            <div class="divider-horizontal"></div>
             <form name="register-form" class="register-form" method="post" netlify action="/">
                 <div class="form-field">
-                    <label for="name-parent">Име родител*</label>
+                    <label for="name-parent">Име родител:</label>
                     <input class="form-input-field" type="text" name="name-parent" id="name-parent" required="true">
                 </div>
                 <div class="form-field">
-                    <label for="email">Имейл адрес*</label>
+                    <label for="email">Имейл адрес:</label>
                     <input class="form-input-field" type="email" name="email" id="email" required="true">
                 </div>
                 <div class="form-field">
-                    <label for="phone">Телефонен номер*</label>
+                    <label for="phone">Телефонен номер:</label>
                     <input class="form-input-field" type="text" name="phone" id="phone" required="true">
                 </div>
                 <div class="form-field">
-                    <label for="club">Желая да регистритам детето/децата си в: </label>
-                    <input type="radio" id="2kalinki" name="club" value="2kalinki">
-                    <label class="radio-lbl" for="2kalinki">Клуб Две Калинки</label>
-                    <input type="radio" id="hameleonche" name="club" value="hameleonche">
-                    <label class="radio-lbl" for="hameleonche">Клуб Хамелеонче</label>
+                    <label for="activity">Желая да регистрирам детето/децата си в: </label>
+                    <select name="activity" id="activity">
+                        <option value="DveKalinki">Клуб Две Калинки</option>
+                        <option value="Hameleonche">Клуб Хамелеонче</option>
+                        <option value="DveKalinki">Клуб Две Калинки - еднократно посещение</option>
+                        <option value="Hameleonche">Клуб Хамелеонче - еднократно посещение</option>
+                        <option value="BabaMarta">Клуб Баба Марта ни гостува - еднократно посещение</option>
+                        <option value="MentalnaAritmetika">Ментална аритметика</option>
+                      </select>
                 </div>
                <div class="form-field">
                     <label for="kids">Моля напишете името/имената и възрастта на детето/децата:</label>
@@ -106,6 +139,7 @@
             <div class="contacts-container">
             <div class="contact-details-container">
                 <h2 class="contacts-title">Контакти</h2>
+               
                 <p><i class="fa-solid fa-location-dot"></i><a class="contacts-link" href="https://www.google.se/maps/place/ABF+Vux+-+Odinsskolan/@57.7091772,11.9805527,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff3bab276e437:0x20975c4941590432!8m2!3d57.7091924!4d11.9827317">VUX Odinsskolan, Odinsgatan 17, 411 03 Göteborg</a></p>
             
                 <p><i class="fa-solid fa-phone"></i>070-961 01 80</p>

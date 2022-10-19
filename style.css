@@ -18,6 +18,11 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
 .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -118,7 +123,7 @@ body {
     opacity: 50%;
  
 }
-
+/*About*/
 #about {
     margin: 36px;
     width: 80%;
@@ -134,6 +139,12 @@ body {
     padding: 24px;
 }
 
+.about-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #822e1b;
+    font-weight: bold;
+}
 .dve-kalinki-img {
     width: 50%;
     min-height: 50vh;
@@ -145,7 +156,6 @@ body {
 
 .hameleonche-container {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .hameleonche-text {
@@ -160,6 +170,10 @@ body {
     background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
+}
+
+/*Регистер*/
+#register {
 }
 
 .register-form {
@@ -194,6 +208,12 @@ body {
     width: 50%;
 }
 
+#activity {
+    background-color: var(--clr-cream);
+    margin-top: 12px;
+    padding: 8px;
+}
+
 .btn {
     background-color: var(--clr-cream);
     border: 1px solid var(--clr-green);
@@ -211,6 +231,57 @@ body {
     color: var(--clr-cream);
 }
 
+/*News*/
+.news-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.divider-vertical {
+    width: 2px;
+    
+    background-color: var(--clr-green);
+}
+
+.news-container-1, .news-container-2 {
+    width: 50%;
+  
+}
+.news-title {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news-subtitle {
+    padding-bottom: 24px;
+    text-align: center;
+    color: #822e1b;
+    font-weight: bold;
+}
+.bold {
+    font-weight: bold;
+}
+.ma-img-container {
+
+        width: 100%;
+        min-height: 50vh;
+        background-image: url('./images/mentalna-aritmetika.png');
+        background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+    
+}
+.news-img-BM {
+    
+        background-image: url('./images/baba-marta.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+      
+}
 #contacts {
     width: 80%;
     margin: 0 auto;
