@@ -29,6 +29,7 @@ h2 {
     align-items: center;
     min-height: 100px;
     margin: 0 36px;
+    position: relative;
 }
 
 .logo-container {
@@ -56,7 +57,6 @@ h2 {
     margin-right: 12px;
     border-radius: 50%;
 }
-
 .top-nav-list {
     display: flex;
 }
@@ -74,7 +74,11 @@ h2 {
 }
 .top-nav-item a:active, .top-nav-item a:focus, .top-nav-item a:hover {
     color: var(--clr-green);
+        transform: scale(1.1);
+        transition: 0.3s;
 }
+
+
 
 .divider-horizontal {
     height: 2px;
@@ -183,7 +187,7 @@ h2 {
 -webkit-box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.5);
 -moz-box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.5);
     padding: 12px 24px;
-    background-color: var(--clr-light-green);
+    background-color: var(--clr-cream);
 
 }
 
@@ -282,6 +286,8 @@ h2 {
         min-height: 100vh;
       
 }
+
+/*Contacts*/
 #contacts {
     width: 80%;
     margin: 0 auto;
@@ -331,17 +337,33 @@ h2 {
     background-color: var(--clr-cream);
     border: 1px solid #3d7939;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #fcfbdd inset !important;
+}
+
 footer {
     text-align: center;
     font-size: 12px;
     color: #822e1b;
 }
 
-@media  screen and (max-width: 800px) {
-    #header-wrapper {
+
+@media  screen and (max-width: 768px) {
+    .header-wrapper {
         min-height: 50px;
-        margin: 0 12px;
+        display: block;
     }
+    .logo-container {
+        margin: 0 auto;
+    }
+
+    
+    
+
     #hero {
         width: 100%;
         display: block;

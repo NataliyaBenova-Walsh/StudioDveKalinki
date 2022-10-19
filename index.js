@@ -22,3 +22,4 @@ const onRegister = (event) => {
   document
   .querySelector("form")
   .addEventListener("submit", onRegister);
+
