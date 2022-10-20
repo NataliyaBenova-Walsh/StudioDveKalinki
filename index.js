@@ -23,3 +23,12 @@ const onRegister = (event) => {
   .querySelector("form")
   .addEventListener("submit", onRegister);
 
+  function onMobileMenu() {
+    let x = document.getElementById("myTopNav");
+    if (x.className == "top-nav-list") {
+      x.className += " responsive";
+      console.log("yes");
+    } else {
+      x.className = "top-nav-list";
+    }
+  }
