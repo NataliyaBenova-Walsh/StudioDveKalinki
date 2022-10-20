@@ -78,6 +78,10 @@ h2 {
         transition: 0.3s;
 }
 .top-nav-list .icon {
+    font-size: 32px;
+    position: absolute;
+    top: 24px;
+    right: 0;
     display: none;
   }
 
@@ -368,8 +372,6 @@ footer {
         display: none;
     }
     .top-nav-list a.icon {
-       
-      float: right;
       display: block;
     }
     .top-nav-list.responsive {
@@ -377,9 +379,10 @@ footer {
 
     }
     .top-nav-list.responsive a.icon {
-      position: absolute;
-      top: 0;
-      right: 0;
+        position: absolute;
+        top: -90px;
+    
+   
     }
     .top-nav-list.responsive a {
       float: none;
