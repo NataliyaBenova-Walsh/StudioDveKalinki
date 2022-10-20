@@ -391,6 +391,7 @@ footer {
     .header-wrapper {
         min-height: 50px;
         display: block;
+        margin: 0 12px;
     }
     .logo-container {
         margin: 0 auto;
@@ -412,6 +413,7 @@ footer {
     .top-nav-list.responsive a.icon {
         position: absolute;
         top: -90px;
+       
    
     }
     .top-nav-list.responsive a {
