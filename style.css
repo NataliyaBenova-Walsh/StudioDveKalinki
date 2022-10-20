@@ -376,18 +376,20 @@ footer {
     }
     .top-nav-list.responsive {
         position: relative;
+        display: block;
+        margin: 0 auto;
 
     }
     .top-nav-list.responsive a.icon {
         position: absolute;
         top: -90px;
-    
    
     }
     .top-nav-list.responsive a {
       float: none;
       display: block;
-      text-align: left;
+      text-align: center;
+      padding: 8px 0;
     }
   
 
@@ -406,9 +408,17 @@ footer {
     .hero-img-container {
         display: none;
     }
-    .dve-kalinki-img, .dve-kalinki-text, .hameleonche-img, .hameleonche-text {
+
+    .dve-kalinki-container {
+        display: block;
+    }
+    .dve-kalinki-img, .dve-kalinki-text, .hameleonche-text {
         width: 100%;
         display: block;
+        min-height: 20vh;
+    }
+    .hameleonche-img {
+        display: none;
     }
 
     .register-form {
@@ -434,5 +444,28 @@ footer {
     .news-container-1 {
         margin-bottom: 24px;
     }
+    .news-img-BM {
+        min-height: 50vh;
+    }
    
+}
+
+@media  screen and (min-width: 769px) and (max-width: 1024px) {
+    .news-container {
+        display: block;
+    }
+
+    .news-container-1, .news-container-2 {
+        width: 90%;
+        margin-top: 36px;
+    }
+    .news-container-1 {
+        margin-bottom: 24px;
+    }
+    .news-img-BM {
+        min-height: 75vh;
+    }
+    .register-form {
+        width: 70%;
+    }
 }
