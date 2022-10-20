@@ -222,6 +222,7 @@ h2 {
     background-color: var(--clr-cream);
     margin-top: 12px;
     padding: 8px;
+    color: #292a2c;
 }
 
 .btn {
@@ -344,10 +345,11 @@ h2 {
     border: 1px solid #3d7939;
 }
 
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
+input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #fcfbdd inset !important;
 }
 
@@ -357,6 +359,17 @@ footer {
     color: #822e1b;
 }
 
+@media screen and (max-width: 480px) {
+    #about {
+        width: 95%;
+    }
+    .dve-kalinki-text, .hameleonche-text {
+        padding: 0;
+    }
+    .ma-img-container {
+        min-height: 20vh;
+    }
+}
 
 @media  screen and (max-width: 768px) {
     .header-wrapper {
