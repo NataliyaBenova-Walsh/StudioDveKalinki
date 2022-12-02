@@ -293,16 +293,16 @@ h2 {
         min-height: 100vh;
 }
 
-.news-img-chess {
-    background-image: url('./images/chess.jpg');
+.news-img-jul {
+    background-image: url('./images/jul.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
 
-.news-img-halloween {
-    background-image: url('./images/halloween.jpg');
+.news-img-preJul {
+    background-image: url('./images/preJul.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
