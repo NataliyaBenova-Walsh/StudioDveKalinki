@@ -133,6 +133,38 @@ h2 {
     opacity: 50%;
  
 }
+
+.subscribe-form-container {
+    width: 80%;
+    margin: 60px auto;
+    
+}
+.subscribe-title {
+    font-size: 18px;
+    text-align: center;
+    color: var(--clr-red);
+
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe-form-field {
+    margin-right: 24px;
+}
+.subscribe-form-input-field {
+    padding: 8px;
+    background-color: var(--clr-cream);
+    border: none;
+    border-bottom: 1px solid var(--clr-green);
+}
+
+
+#subscribeBtn {
+    margin-top: 0;
+}
 /*About*/
 #about {
     margin: 36px;
@@ -452,6 +484,12 @@ footer {
 
     .hero-img-container {
         display: none;
+    }
+    .subscribe-form {
+        flex-direction: column;
+    }
+    #subscribeBtn {
+        margin-top: 24px;
     }
 
     .dve-kalinki-container {
