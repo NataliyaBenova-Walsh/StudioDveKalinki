@@ -34,28 +34,37 @@
         <section id="hero">
             <div class="hero-info">
                 <h1 class="hero-title green">Студио Две Калинки</h1>
-                <h3 class="hero-subtitle green">За деца от 3 до 9 години</h3>
-                <h1 class="hero-title red">Студио Хамелеонче</h1>
-                <h3 class="hero-subtitle red">За деца от 10 до 15 години</h3>
-                <p class="hero-text">Български клуб за деца </p>
+                <h3 class="hero-subtitle green">Занимания за деца от 3 до 15 години</h3>
+              
+                <p class="hero-text">Български семеен клуб за деца </p>
             </div>
             <div class="hero-img-container">
             </div>
+           
         </section>
+
+        <div class="spring-term">
+            <p>След успешен първи срок, семеен клуб ”Две Калинки” продължава с нови курсове за деца за периода от 28 януари до 27 май в ABF с адрес: Odinsgatan 17, 411 03 Göteborg.
+
+                За пролетния срок на 2023 г. сме предвидили следните занимания които ще се провеждат всяка събота...
+                </p>
+          </div>
 
         <div class="divider-horizontal"></div>
         <section id="about">
             <h2 class="about-title">За нас</h2>
             <div class="divider-horizontal"></div>
-            <p class="about-info">Семеен български клуб в Гьотеборг. Целта на клуба е да съхрани езика и традициите на българските деца, живеещи в Швеция.</p>
+            <p class="about-info">Български семеен клуб в Гьотеборг. Целта на клуба е децата да се срещат с други деца, с които да общуват на българские език, да се създава среда, в която децата да научават за българските традиции, обичаи и история. Не на последно място среда, в която родителите да общуват помежду си, да обменят идеи и материали.</p>
             <div class="about-container">
 
                 <div class="dve-kalinki-container">
                     <div class="dve-kalinki-img"></div>
                     <div class="dve-kalinki-text">
-                        <h3 class="dve-kalinki-title">Студио Две Калинки</h3>
-                        <h4 class="dve-kalinki-subtitle">Занимания за деца от 3 до 9 години</h3>
-                        <p class="dve-kalinki-info">Азбука и смятане, български език, четене и пеене, традиции, рисуване, крафт занимания, игри и забавления</p>
+                        
+                        <h4 class="dve-kalinki-subtitle">Занимания за деца от 3 до 8 години</h3>
+                        <p class="dve-kalinki-info">За деца от 3 до 5 години - Труд и творчество </p>
+                        <p class="dve-kalinki-info">За деца от 6 до 8 години - Рисуване, труд и творчество</p>
+                        <p class="dve-kalinki-info"></p>
                         <a class="about-link" href="#register">Регистрация</a>
                     </div>
                     
@@ -63,9 +72,9 @@
                 <div class="hameleonche-container">
                 
                     <div class="hameleonche-text">
-                        <h3 class="hameleonche-title">Студио Хамелеонче</h3>
-                        <h4 class="hameleonche-subtitle">Занимания за деца от 10 до 15 години</h3>
-                        <p class="hameleonche-info">Български език и традиции, история, фолклор</p>
+
+                        <h4 class="hameleonche-subtitle">Занимания за деца от 9 до 15 години</h3>
+                        <p class="hameleonche-info">История и традиции, рисуване</p>
                         <a class="about-link" href="#register">Регистрация </a>
                     </div>
                     <div class="hameleonche-img"></div>
@@ -115,6 +124,15 @@
         <section id="register">
             <h2 class="form-title">Регистрация</h2>
             <div class="divider-horizontal"></div>
+            <div class="form-info">
+            <p >Таксата за пролетен срок 2023 (15 седмици): </p>
+            <ul>
+                <li>Семейство с 1 дете: <span class="bold">850кр</span> </li>
+                <li>Семейство с 2 или повече деца: <span class="bold">1150кр</span> </li> 
+                <li>Еднократно посещение за семесйство с 1 дете: <span class="bold">150кр </span></li>
+                <li>Еднократен посещение за семесйство с 2 или повече деца: <span class="bold">200кр</span> </li>
+            </ul>
+            </div>
             <form name="register-form" class="register-form" method="post" netlify action="/">
                 <div class="form-field">
                     <label for="name-parent">Име родител:</label>
@@ -131,14 +149,10 @@
                 <div class="form-field">
                     <label for="activity">Желая да регистрирам детето/децата си в: </label>
                     <select name="activity" id="activity">
-                        <option value="Dve-Kalinki">Клуб Две Калинки</option>
-                        <option value="Hameleonche">Клуб Хамелеонче</option>
+                        <option value="Dve-Kalinki">Клуб Две Калинки - пролет</option>
                         <option value="Dve-Kalinki-1-visit">Клуб Две Калинки - еднократно посещение</option>
-                        <option value="Hameleonche-1-visit">Клуб Хамелеонче - еднократно посещение</option>
-                        <option value="Baba-Marta">Кoледен маратон и работилница</option>
-                        <option value="Mentalna-Aritmetika">Ментална аритметика</option>
-                        <option value="Halloween-party">Сладка работилница</option>
-                        <option value="Chess-club">Клуб по шах</option>
+                        
+                        <option value="Chess-club">Фика</option>
                       </select>
                 </div>
                <div class="form-field">
@@ -148,6 +162,10 @@
                 
                 <button class="btn" id="registerBtn" type="submit">Регистрация</button>
             </form>
+
+            <div class="form-info">
+                <p>Заплащането се извършва на място чрез Swish. В таксата за пролетния срок се включват 15 съботни посещения, консумативи за провеждане на уроци и лека закуска (кафе, чай и бисквитки). Приветстваме родители които за своя сметка искат да обогатят закуската. </p>
+            </div>
             
         </section>
 
