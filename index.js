@@ -32,4 +32,16 @@ const onRegister = (event) => {
     }
   }
 
+
+  function onSelect() {
+    var x = document.getElementById("activity").value;
+    console.log(x)
+    
+    if(x=='Dve-Kalinki-1-visit' || x=='fika') {
+  
+      document.getElementById("date-field").style.display="block";
+    } else {
+      document.getElementById("date-field").style.display="none";
+    }
+  }
   

@@ -30,6 +30,7 @@ h2 {
     min-height: 100px;
     margin: 0 36px;
     position: relative;
+
 }
 
 .logo-container {
@@ -165,7 +166,9 @@ h2 {
 #subscribeBtn {
     margin-top: 0;
 }
+
 /*About*/
+
 #about {
     margin: 36px;
     width: 80%;
@@ -214,7 +217,10 @@ h2 {
   background-size: cover;
 }
 
-/*Регистер*/
+.fa-caret-right {
+    color: #822e1b;
+} 
+/*Register*/
 
 .form-info {
     width: 80%;
@@ -257,6 +263,9 @@ h2 {
     margin-top: 12px;
     padding: 8px;
     color: #292a2c;
+}
+#date-field {
+    display: none;
 }
 
 .btn {
@@ -415,6 +424,7 @@ footer {
     font-size: 12px;
     color: #822e1b;
 }
+
 
 .spring-term {
     width: 80%;

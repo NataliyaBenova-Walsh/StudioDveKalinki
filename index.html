@@ -15,10 +15,11 @@
                 <div class="logo-img-container"></div>
                 <h2 class="logo-title"><a class="logo-link" href="/">Две Калинки</a></h2>
             </div>
+            
             <ul class="top-nav-list" id="myTopNav">
-                
+              
                 <li class="top-nav-item"><a href="#register">Регистрация</a></li>
-                <li class="top-nav-item"><a href="#news">Актуално</a></li>
+                
                 <li class="top-nav-item"><a href="#about">За нас</a></li>
                 <li class="top-nav-item"><a href="#contacts">Контакти</a></li>
                 <a href="javascript:void(0);" class="icon" onclick="onMobileMenu()">
@@ -82,7 +83,7 @@
                         <p class="dve-kalinki-info"><span class="bold">10:30 - 11:20</span> Твореческа работилница (3-5 години) </p>
                         <p class="dve-kalinki-info"><span class="bold">10:30 - 11:20</span>  Рисуване (6-8 години)</p>
                         <p class="dve-kalinki-info"><span class="bold">11:30 - 12:30</span> Труд и творчество (6-8 години)</p>
-                        <a class="about-link" href="#register">Регистрация</a>
+                        <a class="about-link" href="#register">Регистрация <i class="fa-solid fa-caret-right"></i></a>
                     </div>
                     
                 </div>
@@ -93,7 +94,7 @@
                         <h4 class="hameleonche-subtitle">Занимания за деца от 9 до 15 години</h3>
                         <p class="hameleonche-info"> <span class="bold">11:30 - 12:30</span> Рисуване</p>
                         <p class="hameleonche-info"> <span class="bold">13:00 - 14:00</span> История и традиции</p>
-                        <a class="about-link" href="#register">Регистрация </a>
+                        <a class="about-link" href="#register">Регистрация <i class="fa-solid fa-caret-right"></i></a>
                     </div>
                     <div class="hameleonche-img"></div>
                 </div>
@@ -166,18 +167,22 @@
                 </div>
                 <div class="form-field">
                     <label for="activity">Желая да регистрирам детето/децата си в: </label>
-                    <select name="activity" id="activity">
-                        <option value="Dve-Kalinki">Клуб Две Калинки - пролет</option>
-                        <option value="Dve-Kalinki-1-visit">Клуб Две Калинки - еднократно посещение</option>
+                    <select name="activity" id="activity" onchange="onSelect()">
+                        <option value="Dve-Kalinki">Клуб "Две Калинки" - пролетен срок</option>
+                        <option value="Dve-Kalinki-1-visit">Клуб "Две Калинки" - еднократно посещение</option>
                         
                         <option value="fika">Фика</option>
                       </select>
                 </div>
 
+                <div class="form-field " id="date-field">
+                    <label for="date">Дата за еднократно посещение: </label>
+                    <input class="form-input-field" type="text" name="date" id="date" required="true">
+                </div>
                 
 
                <div class="form-field">
-                    <label for="kids">Моля напишете името/имената, възрастта на детето/децата и датата, в случай, че желаете еднократно посещение:</label>
+                    <label for="kids">Моля напишете името/имената и възрастта на детето/децата:</label>
                     <textarea name="kids" id="kids" cols="30" rows="5"></textarea>
                </div>
                 
@@ -203,6 +208,7 @@
                 <p><i class="fa-solid fa-phone"></i>070-961 01 80</p>
                 
                 <p><i class="fa-solid fa-envelope"></i><a class="contacts-link" href="mailto:StudioDveKalinki@gmail.com">StudioDveKalinki@gmail.com</a></p>
+                <p><a class="contacts-link" href="https://www.facebook.com/groups/407292551488338/"><i class="fa-brands fa-facebook"></i>"Две Калинки" Гьотеборг, Швеция</a></p>
             </div>
             <div class="contact-form-container">
                 <form name="contact-form" class="contact-form" method="post" netlify action="/">
