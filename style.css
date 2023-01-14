@@ -173,11 +173,14 @@ h2 {
     margin: 0;
  
 }
+.about-container {
+    margin: 0 auto;
+width: 80%;
+}
 
 .dve-kalinki-container {
     display: flex;
-    width: 80%;
-    margin: 0 auto;
+    
 }
 
 .dve-kalinki-text {
@@ -289,6 +292,12 @@ h2 {
 }
 .bold {
     font-weight: bold;
+}
+#success {
+    color: var(--clr-red);
+    font-weight: bold;
+    padding: 24px 0;
+    display: none;
 }
 
 /*News*/

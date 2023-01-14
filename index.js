@@ -13,7 +13,7 @@ const onRegister = (event) => {
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => console.log("Form successfully submitted"))
-      .then(() => alert('Благодаря за регистрацията! Очаквайте имейл с подробна информация.'))
+      .then(successReg())
       .then(myForm.reset())
       .catch((error) => alert(error));
 
@@ -46,3 +46,7 @@ const onRegister = (event) => {
     }
   }
   
+  function successReg() {
+    document.getElementById('success').style.display="block";
+
+  }
