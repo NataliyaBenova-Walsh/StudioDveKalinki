@@ -13,6 +13,7 @@ const onRegister = (event) => {
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => console.log("Form successfully submitted"))
+      .then(() => alert('Благодаря за регистрацията! Очаквайте имейл с подробна информация.'))
       .then(myForm.reset())
       .catch((error) => alert(error));
 
