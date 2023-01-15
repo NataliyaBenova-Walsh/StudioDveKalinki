@@ -15,7 +15,7 @@ const onRegister = (event) => {
       body: new URLSearchParams(formData).toString(),
     })
       
-      .then(() => alert("Thank you for your submission"))
+      .then(() => alert("Успешна регистрация"))
       .then(myForm.reset())
       
       .catch((error) => alert(error));
@@ -27,13 +27,57 @@ const onRegister = (event) => {
   .querySelector(".register-form")
   .addEventListener("submit", onRegister);
 
+  const onSubscribe = (event) => {
+    event.preventDefault();
+  
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    
+    console.log(formData);
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      
+      .then(() => alert("Успешно се абонирахте за нашия бюлетин"))
+      .then(myForm.reset())
+      
+      .catch((error) => alert(error));
+
+      
+  };
+
   document
   .querySelector(".subscribe-form")
-  .addEventListener("submit", onRegister);
+  .addEventListener("submit", onSubscribe);
+
+  const onContactUs = (event) => {
+    event.preventDefault();
+  
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    
+    console.log(formData);
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      
+      .then(() => alert("Успешно се свързахте с нас. Очаквайте отговор скоро"))
+      .then(myForm.reset())
+      
+      .catch((error) => alert(error));
+
+      
+  };
 
   document
   .querySelector(".contact-form")
-  .addEventListener("submit", onRegister);
+  .addEventListener("submit", onContactUs);
 
   function onMobileMenu() {
     let x = document.getElementById("myTopNav");
@@ -58,7 +102,7 @@ const onRegister = (event) => {
   }
 
   function formStatus() {
-    
+
   }
   
  
