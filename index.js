@@ -33,7 +33,7 @@ const onRegister = (event) => {
     const myForm = event.target;
     const formData = new FormData(myForm);
     
-    console.log(formData);
+    
     
     fetch("/", {
       method: "POST",
@@ -66,7 +66,9 @@ const onRegister = (event) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      
+      .then(()=> {
+        document.getElementById("message").style.display="block"
+      })
       .then(() => alert("Успешно се свързахте с нас. Очаквайте отговор скоро"))
       .then(myForm.reset())
       
