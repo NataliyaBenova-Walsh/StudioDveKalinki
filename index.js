@@ -66,12 +66,9 @@ const onRegister = (event) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(()=> {
-        document.getElementById("message").style.display="block"
-      })
+    
       .then(() => alert("Успешно се свързахте с нас. Очаквайте отговор скоро"))
       .then(myForm.reset())
-      
       .catch((error) => alert(error));
 
       
@@ -103,8 +100,6 @@ const onRegister = (event) => {
     }
   }
 
-  function formStatus() {
-
-  }
+  
   
  
