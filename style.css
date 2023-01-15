@@ -293,11 +293,11 @@ width: 80%;
 .bold {
     font-weight: bold;
 }
-#success {
+.formStatus {
     color: var(--clr-red);
     font-weight: bold;
     padding: 24px 0;
-  display: none;
+  
 }
 
 /*News*/

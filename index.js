@@ -6,14 +6,14 @@ const onRegister = (event) => {
   
     const myForm = event.target;
     const formData = new FormData(myForm);
+    let formStatus = document.querySelector(".formStatus");
     
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => console.log("Form successfully submitted"))
-      .then(() => alert("Thank you"))
+      .then(() => formStatus.innerHTML="Thank you")
       .then(myForm.reset())
       
       .catch((error) => alert(error));
@@ -47,7 +47,4 @@ const onRegister = (event) => {
     }
   }
   
-  function successReg() {
-    document.getElementById('success').style.display="block";
-
-  }
+ 
