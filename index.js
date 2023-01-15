@@ -13,7 +13,7 @@ const onRegister = (event) => {
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => console.log("Form successfully submitted"))
-      .then(successReg())
+      .then(() => alert("Thank you"))
       .then(myForm.reset())
       
       .catch((error) => alert(error));
