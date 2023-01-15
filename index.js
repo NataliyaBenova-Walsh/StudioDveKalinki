@@ -13,7 +13,7 @@ const onRegister = (event) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => formStatus.innerHTML="Thank you")
+      
       .then(myForm.reset())
       
       .catch((error) => alert(error));
