@@ -13,9 +13,9 @@ const onRegister = (event) => {
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => console.log("Form successfully submitted"))
-      
-      .then(myForm.reset())
       .then(successReg())
+      .then(myForm.reset())
+      
       .catch((error) => alert(error));
 
       
