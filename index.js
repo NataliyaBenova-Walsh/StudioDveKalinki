@@ -16,7 +16,7 @@ const onRegister = (event) => {
     })
       
       .then(() => alert("Thank you for your submission"))
-      //.then(myForm.reset())
+      .then(myForm.reset())
       
       .catch((error) => alert(error));
 
@@ -24,7 +24,15 @@ const onRegister = (event) => {
   };
   
   document
-  .querySelector("form")
+  .querySelector(".register-form")
+  .addEventListener("submit", onRegister);
+
+  document
+  .querySelector(".subscribe-form")
+  .addEventListener("submit", onRegister);
+
+  document
+  .querySelector(".contact-form")
   .addEventListener("submit", onRegister);
 
   function onMobileMenu() {
@@ -47,6 +55,10 @@ const onRegister = (event) => {
     } else {
       document.getElementById("date-field").style.display="none";
     }
+  }
+
+  function formStatus() {
+    
   }
   
  
