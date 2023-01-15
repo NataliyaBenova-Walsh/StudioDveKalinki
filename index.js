@@ -6,14 +6,15 @@ const onRegister = (event) => {
   
     const myForm = event.target;
     const formData = new FormData(myForm);
-    let formStatus = document.querySelector(".formStatus");
+    
+    console.log(formData);
     
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then (() => formStatus.style.display("block"))
+      
       .then(() => alert("Thank you for your submission"))
       //.then(myForm.reset())
       
