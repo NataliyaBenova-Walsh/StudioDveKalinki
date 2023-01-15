@@ -294,10 +294,10 @@ width: 80%;
     font-weight: bold;
 }
 #success {
-    color: var(--clr-red);
+    color: var(--clr-cream);
     font-weight: bold;
     padding: 24px 0;
-    display: none;
+  
 }
 
 /*News*/
