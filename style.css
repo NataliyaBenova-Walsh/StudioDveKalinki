@@ -297,7 +297,7 @@ width: 80%;
     color: var(--clr-red);
     font-weight: bold;
     padding: 24px 0;
-  
+    display: none;
 }
 
 /*News*/
