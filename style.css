@@ -503,6 +503,18 @@ footer {
     font-size: 14px;
     text-align: justify;
 }
+.teacher-link {
+    font-size: 14px;
+    
+}
+
+.personal-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3d7939;
+    font-weight: bold;
+    margin-top: 12px;
+}
 
 @media screen and (max-width: 480px) {
     #about {
